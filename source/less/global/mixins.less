@@ -1,0 +1,56 @@
+// .desktop {
+//   @media screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+// .laptop {
+//   @media screen and (min-width: 992px) {
+//     @content;
+//   }
+// }
+// .tablet {
+//   @media screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+// .mobile {
+//   @media screen and (min-width: 480px) {
+//     @content;
+//   }
+// }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.list-reset(@margin: true, @padding: true) {
+  margin: if((@margin), 0);
+  padding: if((@padding), 0);
+  text-indent: 0;
+  list-style: none;
+  list-style-position: outside;
+}
+
+// .rem($num) {
+//   $strip-unit: $num / ($num * 0 + 1);
+//   @return $strip-unit / 16 * 1rem;
+// }
+
+// .em($num, $root: 16) {
+//   $strip-unit: $num / ($num * 0 + 1);
+//   @return $strip-unit / $root * 1em;
+// }
+
+// .pseudo($display: block, $pos: absolute, $content: ''){
+//   content: $content;
+//   display: $display;
+//   position: $pos;
+// }
