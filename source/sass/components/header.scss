@@ -15,11 +15,12 @@
 }
 
 .header__burger-btn {
-  border: none;
-  background: url('../../img/icon-menu-burger.svg');
   width: 50px;
   height: 24px;
   padding: 0;
+
+  border: none;
+  background: url('../../img/icon-menu-burger.svg');
   background-repeat: no-repeat;
   cursor: pointer;
 }

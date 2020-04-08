@@ -1,5 +1,5 @@
 .downloads {
-  background-color: @bg-top-color;
+  background-color: $bg-top-color;
 }
 
 .downloads__wrapper {
@@ -32,8 +32,8 @@
 
 .downloads__text {
   padding: 90px 40px 0;
-  color: @white;
-  font-family: @main-font-light;
+  color: $white;
+  font-family: $main-font-light;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .downloads__list {
-  .list-reset();
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -65,8 +65,8 @@
 
 .downloads__info {
   padding-bottom: 30px;
-  color: @white;
-  font-family: @main-font-light;
+  color: $white;
+  font-family: $main-font-light;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
