@@ -4,10 +4,19 @@
 @import "./global/global";
 @import "./global/mixins";
 
-@import "./components/btn";
+@import "./blocks/btn";
+@import "./blocks/form-block";
+@import "./blocks/input";
 
-@import "./components/header";
-@import "./components/downloads";
-@import "./components/main-info";
-@import "./components/reviews";
-@import "./components/slides";
+@import "./blocks/header";
+@import "./blocks/downloads";
+@import "./blocks/main-info";
+@import "./blocks/reviews";
+@import "./blocks/slides";
+@import "./blocks/tariff";
+@import "./blocks/contacts";
+@import "./blocks/nav";
+@import "./blocks/main-header";
+@import "./blocks/main-form";
+@import "./blocks/footer";
+@import "./blocks//social-block";

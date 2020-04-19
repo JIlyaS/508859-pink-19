@@ -1,0 +1,122 @@
+.tariff {
+  padding-bottom: 48px;
+  background-color: $bg-block;
+}
+
+.tariff__slides {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: $white;
+}
+
+.tariff__item {
+  min-width: 276px;
+  margin: 0;
+  padding: 0;
+  border-right: 2px solid $border-color;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+}
+
+.tariff__top-block {
+  position: relative;
+  width: 100%;
+  padding: 23px 0 21px;
+  text-align: center;
+  background-color: $main-text-color;
+}
+
+.tariff__hit-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 74px;
+  height: 73px;
+  background-image: url('../../img/bg-hit.svg');
+}
+
+.tariff__hit-text {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  display: inline-block;
+  color: $white;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.tariff__name {
+  display: block;
+  color: $white;
+  font-family: $main-font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariff__price {
+  display: block;
+  color: $white;
+  font-family: $main-font-light;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariff__desc-list {
+  @include list-reset;
+}
+
+.tariff__desc-item {
+  position: relative;
+  width: 100%;
+  padding: 22px;
+  padding-right: initial;
+  border-bottom: 2px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--yes::after,
+  &--no::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+  }
+
+  &--yes::after {
+    right: 17px;
+    width: 31px;
+    height: 23px;
+    background-image: url('../../img/icon-yes.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--no::after {
+    right: 19px;
+    width: 27px;
+    height: 27px;
+    background-image: url('../../img/icon-no.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.tariff__desc-text {
+  display: inline-block;
+
+  color: $main-text-color;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+

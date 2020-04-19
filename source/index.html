@@ -140,92 +140,106 @@
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
-        <ul class="tariff__list">
-          <li class="tariff__item">
+        <ul class="slides tariff__slides">
+          <li class="slides__item tariff__item">
             <div class="tariff__top-block">
               <b class="tariff__name">Стандарт</b>
               <span class="tariff__price">3,99 USD</span>
             </div>
             <div class="tariff__bottom-block">
               <ul class="tariff__desc-list">
-                <li class="tariff__desc-item">
-                  <span>Розовый фильтр</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Розовый фильтр</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Смайлики</span>
+                <li class="tariff__desc-item tariff__desc-item--no">
+                  <span class="tariff__desc-text">Смайлики</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Комментарии</span>
+                <li class="tariff__desc-item tariff__desc-item--no">
+                  <span class="tariff__desc-text">Комментарии</span>
                 </li>
               </ul>
             </div>
           </li>
-          <li class="tariff__item">
+          <li class="slides__item tariff__item slides__item--active">
             <div class="tariff__top-block">
+              <div class="tariff__hit-block">
+                <span class="tariff__hit-text">Хит</span>
+              </div>
               <b class="tariff__name">Стандарт</b>
               <span class="tariff__price">3,99 USD</span>
             </div>
             <div class="tariff__bottom-block">
               <ul class="tariff__desc-list">
-                <li class="tariff__desc-item">
-                  <span>Розовый фильтр</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Розовый фильтр</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Смайлики</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Смайлики</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Комментарии</span>
+                <li class="tariff__desc-item tariff__desc-item--no">
+                  <span class="tariff__desc-text">Комментарии</span>
                 </li>
               </ul>
             </div>
           </li>
-          <li class="tariff__item">
+          <li class="slides__item tariff__item">
             <div class="tariff__top-block">
               <b class="tariff__name">Стандарт</b>
               <span class="tariff__price">3,99 USD</span>
             </div>
             <div class="tariff__bottom-block">
               <ul class="tariff__desc-list">
-                <li class="tariff__desc-item">
-                  <span>Розовый фильтр</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Розовый фильтр</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Смайлики</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Смайлики</span>
                 </li>
-                <li class="tariff__desc-item">
-                  <span>Комментарии</span>
+                <li class="tariff__desc-item tariff__desc-item--yes">
+                  <span class="tariff__desc-text">Комментарии</span>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
+        <ul class="slides__dot-list">
+          <li class="slides__dot-item">
+            <span class="slides__dot"></span>
+          </li>
+          <li class="slides__dot-item">
+            <span class="slides__dot slides__dot--active"></span>
+          </li>
+          <li class="slides__dot-item">
+            <span class="slides__dot"></span>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__content">
-          <p class="footer__paragraph">
+    <footer class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__content">
+          <p class="contacts__paragraph">
             Остались вопросы? Свяжитесь с нами!
           </p>
-          <div class="footer__block">
-            <b class="footer__title">Звоните:</b>
-            <a href="tel:88125556666">+7(812)555-66-66</a>
-          </div>
-          <div class="footer__block">
-            <b class="footer__title">Пишите:</b>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="footer__block">
-            <b class="footer__title">Приезжайте в гости:</b>
-            <p class="footer__text">
-              ул. Большая Конюшенная, 19/8
-            </p>
-          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b class="contacts__title">Звоните:</b>
+              <a class="contacts__info" href="tel:88125556666">+7(812)555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__title">Пишите:</b>
+              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__title">Приезжайте в гости:</b>
+              <p class="contacts__info" class="contacts__text">
+                ул. Большая Конюшенная, 19/8
+              </p>
+            </li>
+          </ul>
         </div>
-        <div class="footer__map">
-
-        </div>
+        <div class="contacts__map"></div>
       </div>
     </footer>
   </body>

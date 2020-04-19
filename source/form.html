@@ -6,27 +6,29 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
-        <a class="logo" href="#">
-          <img class="logo__img" src="#" alt="Логотип">
+        <a class="logo" href="/">
+          <picture>
+            <img class="logo__img" width="74px" height="23px" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+          </picture>
         </a>
         <button class="header__burger-btn" type="button">
-          <span class="header__burger-line"></span>
+          <span class="visually-hidden">Бургер меню</span>
         </button>
-        <nav class="nav">
+        <nav class="nav visually-hidden">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Главная</a>
+              <a class="nav__link" href="#">Главная</a>
             </li>
             <li class="nav__item">
-              <a href="#">Фотографии</a>
+              <a class="nav__link" href="#">Фотографии</a>
             </li>
             <li class="nav__item">
-              <a href="#">Конкурс</a>
+              <a class="nav__link" href="#">Конкурс</a>
             </li>
             <li class="nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -42,94 +44,104 @@
         <h2 class="visually-hidden">Форма для конкурса</h2>
         <div class="main-form__wrapper">
           <p class="main-form__info">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="main-form__block">
-              <div class="form-block">
-                <label class="form-block__label" for="surname">Фамилия:</label>
-                <input class="form-block__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
-              </div>
-              <div class="form-block">
-                <label class="form-block__label" for="name">Имя:</label>
-                <input class="form-block__input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
-              </div>
-              <div class="form-block">
-                <label class="form-block__label" for="patronymic">Отчество:</label>
-                <input class="form-block__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </div>
-            </div>
-            <div class="main-form__block">
-              <b class="main-form__title">
-                Ваши безбашенные достижения в путешествии
-              </b>
-              <div class="main-form__wrapper">
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="selfie">
-                  <span class="form-block__text">Сделал селфис акулой</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="burnt">
-                  <span class="form-block__text">Обгорел на пляже</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="Chuck Norris">
-                  <span class="form-block__text">Видел Чака Норриса</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="souvenir">
-                  <span class="form-block__text">Накупил сувениров</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="tower">
-                  <span class="form-block__text">Удержал башню</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="achievement" value="hotel">
-                  <span class="form-block__text">Разгромил отель</span>
-                </label>
+            <div class="main-form__container main-form__container--white">
+              <div class="main-form__wrap">
+                <div class="form-block">
+                  <label class="form-block__label" for="surname">Фамилия:</label>
+                  <input class="input form-block__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+                </div>
+                <div class="form-block">
+                  <label class="form-block__label" for="name">Имя:</label>
+                  <input class="input form-block__input" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+                </div>
+                <div class="form-block">
+                  <label class="form-block__label" for="patronymic">Отчество:</label>
+                  <input class="input form-block__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                </div>
               </div>
             </div>
-            <div class="main-form__block">
-              <div class="form-block">
-                <label class="form-block__label" for="number">Номер телефона</label>
-                <input class="form-block__input" id="number" type="number" name="number" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form-block">
-                <label class="form-block__label" for="email">Адрес почты</label>
-                <input class="form-block__input" id="email" type="email" name="email" placeholder="Введите почту *">
+            <div class="main-form__container main-form__container--grey">
+              <div class="main-form__wrap">
+                <b class="main-form__title">
+                  Ваши безбашенные достижения в путешествии
+                </b>
+                <div class="main-form__block">
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="selfie">
+                    <span class="form-block__check-text">Сделал селфи с акулой</span>
+                  </label>
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="burnt">
+                    <span class="form-block__check-text">Обгорел на пляже</span>
+                  </label>
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="Chuck Norris">
+                    <span class="form-block__check-text">Видел Чака Норриса</span>
+                  </label>
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="souvenir">
+                    <span class="form-block__check-text">Накупил сувениров</span>
+                  </label>
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="tower">
+                    <span class="form-block__check-text">Удержал башню</span>
+                  </label>
+                  <label class="form-block__check-label">
+                    <input class="form-block__check-input visually-hidden" type="checkbox" name="achievement" value="hotel">
+                    <span class="form-block__check-text">Разгромил отель</span>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="main-form__block">
-              <b class="main-form__title">
-                С каким приложением путешествовали?
-              </b>
-              <div class="main-form__wrapper">
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="application" value="iOS">
-                  <span class="form-block__text">Pink для iOS</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="application" value="Android">
-                  <span class="form-block__text">Pink для Android</span>
-                </label>
-                <label class="form-block__label">
-                  <input class="visually-hidden" type="checkbox" name="application" value="Windows Phone">
-                  <span class="form-block__text">Windows Phone</span>
-                </label>
+            <div class="main-form__container  main-form__container--white">
+              <div class="main-form__wrap">
+                <div class="form-block">
+                  <label class="form-block__label" for="number">Номер телефона</label>
+                  <input class="input form-block__input" id="number" type="text" name="number" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form-block">
+                  <label class="form-block__label" for="email">Адрес почты</label>
+                  <input class="input form-block__input" id="email" type="email" name="email" placeholder="Введите почту *">
+                </div>
               </div>
             </div>
-            <div class="main-form__block">
-              <b class="main-form__title">
-                Опишите свои эмоции
-              </b>
-              <textarea class="main-form__textarea" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <div class="main-form__container  main-form__container--grey">
+              <div class="main-form__wrap">
+                <b class="main-form__title">
+                  С каким приложением путешествовали?
+                </b>
+                <div class="main-form__block">
+                  <label class="form-block__radio-label">
+                    <input class="form-block__radio visually-hidden" type="checkbox" name="application" value="iOS">
+                    <span class="form-block__radio-text">Pink для iOS</span>
+                  </label>
+                  <label class="form-block__radio-label">
+                    <input class="form-block__radio visually-hidden" type="checkbox" name="application" value="Android">
+                    <span class="form-block__radio-text">Pink для Android</span>
+                  </label>
+                  <label class="form-block__radio-label">
+                    <input class="form-block__radio visually-hidden" type="checkbox" name="application" value="Windows Phone">
+                    <span class="form-block__radio-text">Windows Phone</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="main-form__container main-form__container--white">
+              <div class="main-form__wrap">
+                <b class="main-form__title main-form__title--mb">
+                  Опишите свои эмоции
+                </b>
+                <textarea class="main-form__textarea" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях">
 
-              </textarea>
+                </textarea>
+              </div>
             </div>
             <div class="main-form__submit-block">
-              <button class="btn btn--submit" type="submit">Отправить форму</button>
-              <span>*</span> — обязательные поля
+              <button class="btn btn--submit main-form__submit" type="submit">Отправить форму</button>
+              <span class="main-form__required-text"><span class="main-form__star">*</span> — обязательные поля</span>
             </div>
           </form>
         </div>
@@ -137,33 +149,35 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <img class="logo__img" src="#" alt="Логотип">
+        <div class="logo footer__logo">
+          <a class="logo__link" href="/">
+            <picture>
+              <img class="logo__img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+            </picture>
           </a>
         </div>
-        <div class="social-block">
+        <div class="social-block footer__socials">
           <ul class="social-block__list">
             <li class="social-block__item">
               <a class="social-block__link" href="#">
-                <img class="social-block__icon" src="#" alt="Иконка социальной сети">
+                <img class="social-block__icon social-block__icon--twitter" src="./img/icon-twitter.svg" alt="Иконка социальной сети">
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link" href="#">
-                <img class="social-block__icon" src="#" alt="Иконка социальной сети">
+                <img class="social-block__icon social-block__icon--facebook" src="./img/icon-facebook.svg" alt="Иконка социальной сети">
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link" href="#">
-                <img class="social-block__icon" src="#" alt="Иконка социальной сети">
+                <img class="social-block__icon social-block__icon--youtube" src="./img/icon-youtube.svg" alt="Иконка социальной сети">
               </a>
             </li>
           </ul>
         </div>
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <img class="copyright__icon" src="#" alt="Логотип HTML Academy">
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">Разработано</span>
+          <img class="footer__copyright-icon" src="./img/logo-htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy">
         </div>
       </div>
     </footer>

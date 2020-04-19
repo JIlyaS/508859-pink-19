@@ -1,0 +1,18 @@
+.main-header {
+  max-height: 237px;
+
+  background: url('../../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.main-header__header {
+  margin: 0 46px;
+  padding: 102px 0 53px;
+  color: $white;
+  font-family: $main-font-light;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}

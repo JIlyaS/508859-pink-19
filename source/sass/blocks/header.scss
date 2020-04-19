@@ -7,6 +7,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +23,20 @@
   border: none;
   background: url('../../img/icon-menu-burger.svg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
+}
+
+.header--active {
+  background-color: $main-text-color;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.header--active .header__burger-btn {
+  width: 24px;
+  height: 23px;
+  background: url('../../img/icon-menu-cross.svg');
+  background-repeat: no-repeat;
 }
 
