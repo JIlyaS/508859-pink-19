@@ -9,6 +9,7 @@
 
 .contacts__content {
   position: relative;
+  max-width: 320px;
 
   &::after {
     content: '';
@@ -18,8 +19,10 @@
     bottom: -36px;
     width: 0;
     height: 0;
-    border-left: calc(50vw - 9px) solid transparent;
-    border-right: calc(50vw - 9px) solid transparent;
+    // border-left: calc(50vw - 9px) solid transparent;
+    // border-right: calc(50vw - 9px) solid transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
     border-top: 5vh solid $white;
   }
 }
