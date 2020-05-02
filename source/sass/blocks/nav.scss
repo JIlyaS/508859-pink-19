@@ -1,9 +1,16 @@
 .nav {
+  display: none;
   position: absolute;
   top: 65px;
   left: 0;
   right: 0;
   width: 100%;
+}
+
+.header--active .nav {
+  position: relative;
+  top: 0;
+  display: block;
 }
 
 .nav__list {

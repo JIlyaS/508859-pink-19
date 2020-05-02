@@ -6,29 +6,32 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
-        <a class="logo" href="/">
-          <picture>
-            <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
-          </picture>
-        </a>
-        <button class="header__burger-btn" type="button">
-          <span class="visually-hidden">Бургер меню</span>
-        </button>
-        <nav class="nav visually-hidden">
+        <div class="header__container">
+          <a class="logo" href="/">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+              <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger-btn" type="button">
+            <span class="visually-hidden">Бургер меню</span>
+          </button>
+        </div>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Главная</a>
+              <a class="nav__link" href="#">Главная</a>
             </li>
             <li class="nav__item">
-              <a href="#">Фотографии</a>
+              <a class="nav__link" href="#">Фотографии</a>
             </li>
             <li class="nav__item">
-              <a href="#">Конкурс</a>
+              <a class="nav__link" href="#">Конкурс</a>
             </li>
             <li class="nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +57,7 @@
               </li>
             </ul>
             <p class="downloads__info">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
         </div>
@@ -98,6 +101,23 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
+        <div class="effect-block reviews__info-block">
+          <div class="effect-block__block">
+
+          </div>
+          <div class="effect-block__block">
+            <h3 class="effect-block__header">Эффект на 24 часа!</h3>
+            <p class="paragraph effect-block__text">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+            </p>
+            <a class="link effect-block__link" href="#">
+              Узнать больше об исследовании
+            </a>
+          </div>
+        </div>
         <div class="slides reviews__slides">
           <ul class="slides__list">
             <li class="slides__item">

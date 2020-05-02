@@ -1,0 +1,21 @@
+.effect-block {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.effect-block__block {
+   width: 310px;
+}
+
+.effect-block__header {
+  max-width: 170px;
+  margin-bottom: 20px;
+  color: $black;
+  font-family: $main-font-bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
