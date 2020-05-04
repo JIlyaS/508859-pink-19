@@ -1,29 +1,58 @@
 .slides {
 }
 
+.slides--reviews {
+  .slides__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slides__list {
+    @media (min-width: $desktop-width) {
+      max-width: 685px;
+      margin: 0 auto;
+    }
+  }
+}
+
 .slides__list {
   @include list-reset;
-  padding-top: 49px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 22px;
+      height: 41px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      opacity: 0.3;
+      cursor: pointer;
+    }
+
+    &::before {
+      left: 0;
+      background-image: url("../../img/icon-review-arrow-left.svg");
+    }
+
+    &::after {
+      right: 0;
+      background-image: url("../../img/icon-review-arrow-right.svg");
+    }
+  }
 }
 
 .slides__item {
   padding: 0 22px;
-}
-
-.slides__author-name {
-  display: inline-block;
-  margin-bottom: 25px;
-  color: $black;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.slides__review {
-  font-size: 14px;
-  line-height: 30px;
-  color: $main-text-color;
 }
 
 .slides__dot-list {
@@ -51,10 +80,10 @@
   opacity: 0.3;
   transition: 0.3s;
   cursor: pointer;
-}
 
-.slides__dot--active {
-  border-color: $main-text-color;
-  background-color: $white;
-  opacity: 1;
+  &--active {
+    border-color: $main-text-color;
+    background-color: $white;
+    opacity: 1;
+  }
 }

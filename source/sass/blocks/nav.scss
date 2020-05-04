@@ -5,6 +5,12 @@
   left: 0;
   right: 0;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 0;
+    display: block;
+  }
 }
 
 .header--active .nav {
@@ -17,11 +23,22 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 625px;
+  }
 }
 
 .nav__item {
   background-color: $main-text-color;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .nav__link {
@@ -32,4 +49,12 @@
   font-family: $main-font-bold;
   font-size: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    line-height: 110px;
+
+    font-family: $main-font;
+    font-weight: 400;
+    text-transform: none;
+  }
 }
