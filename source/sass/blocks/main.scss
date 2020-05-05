@@ -6,6 +6,18 @@
   margin: 55px 35px;
   text-align: center;
   background-color: $white;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  &--footer {
+    @media(min-width: $tablet-width) {
+      margin-top: 24px;
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .main__info-text {
@@ -13,4 +25,18 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+
+.main__photo-list {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

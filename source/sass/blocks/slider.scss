@@ -2,6 +2,22 @@
   position: relative;
   max-width: 240px;
   margin: 0 auto;
+
+  &--fill {
+    display: none;
+
+    @media(min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--contrast {
+    display: none;
+
+    @media(min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .slider__range-line {

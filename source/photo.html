@@ -8,15 +8,19 @@
   <body>
     <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
-        <a class="logo" href="/">
-          <picture>
-            <img class="logo__img" width="74px" height="23px" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
-          </picture>
-        </a>
-        <button class="header__burger-btn" type="button">
-          <span class="visually-hidden">Бургер меню</span>
-        </button>
-        <nav class="nav visually-hidden">
+        <div class="header__container">
+          <a class="logo" href="/">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+              <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger-btn" type="button">
+            <span class="visually-hidden">Бургер меню</span>
+          </button>
+        </div>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Главная</a>
@@ -34,6 +38,7 @@
         </nav>
       </div>
     </header>
+
     <main class="main">
       <div class="main-header">
         <h2 class="main-header__header">
@@ -49,9 +54,11 @@
       <section class="main__photo-block">
         <h2 class="visually-hidden">Список фотографий</h2>
         <div class="main__photo-list">
-          <article class="photo-article">
+          <article class="photo-article photo-article--width">
             <div class="photo-article__img-block photo-article__img-block--panorama">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg">
                 <img class="photo-article__img photo-article__img--panorama" src="./img/panorama-mobile@1x.jpg" width="320" height="137"  alt="Изображение">
               </picture>
               <div class="photo-article__info-img">
@@ -79,6 +86,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-car-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -103,6 +112,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-drumset-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -127,6 +138,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-window-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -151,6 +164,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-fair-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -175,6 +190,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-pov-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -199,6 +216,8 @@
           <article class="photo-article">
             <div class="photo-article__img-block">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg">
                 <img class="photo-article__img" src="./img/photo-wing-mobile@1x.jpg" width="280" height="180"  alt="Изображение">
               </picture>
             </div>
@@ -222,7 +241,7 @@
           </article>
         </div>
       </section>
-      <div class="main__info">
+      <div class="main__info main__info--footer">
         <p class="text main__info-text">
           Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!
@@ -231,41 +250,57 @@
       <section class="post-block">
         <div class="post-block__wrapper">
           <h2 class="visually-hidden">Пост фотографии</h2>
-          <div  class="post-block__img-block">
+          <div class="post-block__img-block">
             <picture>
+              <source media="(min-width: 1200px)" srcset="./img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg">
               <img class="post-block__img" src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото">
             </picture>
           </div>
-          <div class="post-block__operation">
-            <div class="post-block__operation-btn">
-              <button class="btn btn--icon post-block__btn-icon post-block__btn-icon--active" type="button" area-label="Обрезать">
-                <svg class="icon icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                </svg>
-              </button>
-              <button class="btn btn--icon post-block__btn-icon" type="button" area-label="Закрасить">
-                <svg class="icon icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                  <rect y="40" width="48" height="3"/>
-                </svg>
-              </button>
-              <button class="btn btn--icon post-block__btn-icon" type="button" area-label="Инверсия">
-                <svg class="icon icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                </svg>
-              </button>
+          <div class="post-block__block">
+            <div class="post-block__operation">
+              <div class="post-block__operation-block">
+                <button class="btn btn--icon post-block__btn-icon post-block__btn-icon--active" type="button" area-label="Обрезать">
+                  <svg class="icon icon--crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                  </svg>
+                </button>
+                <div class="slider slider--crop post-block__slider">
+                  <div class="slider__range-line"></div>
+                  <span class="slider__toddler"></span>
+                </div>
+              </div>
+              <div class="post-block__operation-block">
+                <button class="btn btn--icon post-block__btn-icon" type="button" area-label="Закрасить">
+                  <svg class="icon icon--fill" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z"/>
+                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                    <rect y="40" width="48" height="3"/>
+                  </svg>
+                </button>
+                <div class="slider slider--fill post-block__slider">
+                  <div class="slider__range-line"></div>
+                  <span class="slider__toddler"></span>
+                </div>
+              </div>
+              <div class="post-block__operation-block">
+                <button class="btn btn--icon post-block__btn-icon" type="button" area-label="Инверсия">
+                  <svg class="icon icon--contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                  </svg>
+                </button>
+                <div class="slider slider--contrast post-block__slider">
+                  <div class="slider__range-line"></div>
+                  <span class="slider__toddler"></span>
+                </div>
+              </div>
             </div>
-            <div class="slider post-block__slider">
-              <div class="slider__range-line"></div>
-              <span class="slider__toddler"></span>
+            <div class="post-block__btn-block">
+              <button class="btn btn--border post-block__btn" type="button">Запостить</button>
+              <button class="btn btn--border post-block__btn post-block__btn--disabled" type="button">Отмена</button>
             </div>
-          </div>
-          <div class="post-block__btn-block">
-            <button class="btn btn--border post-block__btn" type="button">Запостить</button>
-            <button class="btn btn--border post-block__btn post-block__btn--disabled" type="button">Отмена</button>
           </div>
         </div>
       </section>
@@ -275,7 +310,7 @@
         <div class="logo footer__logo">
           <a class="logo__link" href="/">
             <picture>
-              <img class="logo__img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+              <img class="logo__img logo__img--footer" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
             </picture>
           </a>
         </div>

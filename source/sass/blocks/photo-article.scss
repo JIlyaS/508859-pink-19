@@ -1,5 +1,28 @@
 .photo-article {
   margin-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    width: 50%;
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+
+  &--width {
+
+    width: 100%;
+    max-width: none;
+
+    .photo-article__feedback {
+      @media(min-width: $tablet-width) {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+
+        display: block;
+        width: auto;
+      }
+    }
+  }
 }
 
 .photo-article__img-block {
@@ -7,17 +30,39 @@
   text-align: center;
 
   height: 180px;
+
+  @media(min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .photo-article__img-block--panorama {
+  width: 100%;
   height: 137px;
+
+  @media(min-width: $tablet-width) {
+    height: 507px;
+  }
 }
 
 .photo-article__img {
   display: inline-block;
+  width: 280px;
+  height: 180px;
+
+  @media(min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
 
   &--panorama {
     width: 100%;
+
+    @media(min-width: $tablet-width) {
+      width: 100%;
+      height: 507px;
+    }
   }
 }
 
@@ -28,6 +73,10 @@
   width: 140px;
   text-align: center;
   background-color: $info-text-color;
+
+  @media(min-width: $tablet-width) {
+    top: 57px;
+  }
 }
 
 .photo-article__info-text {
@@ -43,10 +92,20 @@
 .photo-article__content {
   margin: 0 20px;
   background-color: $bg-block;
+
+  @media(min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-article__content-wrap {
   padding: 25px 25px 28px 17px;
+
+  @media(min-width: $tablet-width) {
+    position: relative;
+    padding: 30px 32px 28px 27px;
+    height: 155px;
+  }
 }
 
 .photo-article__name {
@@ -70,6 +129,18 @@
   line-height: 24px;
 }
 
+.photo-article__feedback {
+  @media(min-width: $tablet-width) {
+    position: absolute;
+    width: 240px;
+    bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .photo-article__favorite {
   width: 13px;
   height: 12px;
@@ -81,6 +152,11 @@
   background-position: center;
   background-size: contain;
   cursor: pointer;
+
+  @media(min-width: $tablet-width) {
+    margin-right: 0;
+    order: 1;
+  }
 }
 
 .photo-article__love {
@@ -89,4 +165,8 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    order: 0;
+  }
 }
