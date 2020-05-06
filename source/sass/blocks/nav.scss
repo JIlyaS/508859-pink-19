@@ -59,6 +59,8 @@
   }
 
   &--active {
-    border-bottom: 2px solid $white;
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
   }
 }
