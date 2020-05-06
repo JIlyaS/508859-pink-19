@@ -6,34 +6,39 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
-        <a class="logo" href="/">
-          <picture>
-            <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
-          </picture>
-        </a>
-        <button class="header__burger-btn" type="button">
-          <span class="visually-hidden">Бургер меню</span>
-        </button>
-        <nav class="nav visually-hidden">
+        <div class="header__container">
+          <a class="logo" href="/">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+              <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger-btn" type="button">
+            <span class="visually-hidden">Бургер меню</span>
+          </button>
+        </div>
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#">Главная</a>
+              <a class="nav__link nav__link--active" href="#">Главная</a>
             </li>
             <li class="nav__item">
-              <a href="#">Фотографии</a>
+              <a class="nav__link" href="#">Фотографии</a>
             </li>
             <li class="nav__item">
-              <a href="#">Конкурс</a>
+              <a class="nav__link" href="#">Конкурс</a>
             </li>
             <li class="nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main class="main">
       <div class="downloads">
         <div class="downloads__wrapper">
@@ -54,7 +59,7 @@
               </li>
             </ul>
             <p class="downloads__info">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
         </div>
@@ -72,21 +77,21 @@
             </p>
           </div>
           <ul class="main-info__list">
-            <li class="main-info__item">
+            <li class="main-info__item main-info__item--grey">
               <h3 class="main-info__header">Поднимает настроение</h3>
               <p class="main-info__paragraph">
                 Приложение позволит вам победить осеннюю хандру и депрессию
                 буквально в несколько кликов!
               </p>
             </li>
-            <li class="main-info__item">
+            <li class="main-info__item main-info__item--pink">
               <h3 class="main-info__header">Меняет мир вокруг</h3>
               <p class="main-info__paragraph">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью,
                 чтобы усилить эффект
               </p>
             </li>
-            <li class="main-info__item">
+            <li class="main-info__item main-info__item--smile">
               <h3 class="main-info__header">Заводит новых друзей</h3>
               <p class="main-info__paragraph">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
@@ -98,27 +103,55 @@
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="slides reviews__slides">
-          <ul class="slides__list">
+        <div class="effect-block reviews__info-block">
+          <div class="effect-block__wrapper">
+            <div class="effect-block__block">
+              <div class="effect-block__timer"></div>
+            </div>
+            <div class="effect-block__block effect-block__block--info">
+              <h3 class="effect-block__header">Эффект на 24 часа!</h3>
+              <p class="effect-block__text">
+                Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!
+              </p>
+              <a class="link link--underline effect-block__link" href="#">
+                Узнать больше об исследовании
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="slides reviews__slides slides--reviews">
+          <ul class="slides__list reviews__list">
             <li class="slides__item">
-              <cite class="slides__author-name">Николай Петров</cite>
-              <p class="slides__review">
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+              </div>
+              <p class="reviews__review">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со
                 своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
             <li class="slides__item visually-hidden">
-              <cite class="slides__author-name">Николай Петров</cite>
-              <p class="slides__review">
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+              </div>
+              <p class="reviews__review">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со
                 своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
             <li class="slides__item visually-hidden">
-              <cite class="slides__author-name">Николай Петров</cite>
-              <p class="slides__review">
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+              </div>
+              <p class="reviews__review">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со
                 своей будущей женой в комментариях к выложенной фотографии!»
@@ -141,10 +174,25 @@
       <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
         <ul class="slides tariff__slides">
+          <li class="slides__item tariff__head">
+            <div class="tariff__top-block tariff__top-block--head"></div>
+            <div class="tariff__bottom-block tariff__bottom-block--head">
+              <ul class="tariff__desc-list">
+                <li class="tariff__desc-item">
+                  <span class="tariff__head-text">Розовый фильтр</span>
+                </li>
+                <li class="tariff__desc-item">
+                  <span class="tariff__head-text">Смайлики</span>
+                </li>
+                <li class="tariff__desc-item">
+                  <span class="tariff__head-text">Комментарии</span>
+                </li>
+              </ul>
+          </li>
           <li class="slides__item tariff__item">
             <div class="tariff__top-block">
-              <b class="tariff__name">Стандарт</b>
-              <span class="tariff__price">3,99 USD</span>
+              <b class="tariff__name">База</b>
+              <span class="tariff__price">1,99 USD</span>
             </div>
             <div class="tariff__bottom-block">
               <ul class="tariff__desc-list">
@@ -184,8 +232,8 @@
           </li>
           <li class="slides__item tariff__item">
             <div class="tariff__top-block">
-              <b class="tariff__name">Стандарт</b>
-              <span class="tariff__price">3,99 USD</span>
+              <b class="tariff__name">Анлим</b>
+              <span class="tariff__price">9,99 USD</span>
             </div>
             <div class="tariff__bottom-block">
               <ul class="tariff__desc-list">
@@ -202,7 +250,7 @@
             </div>
           </li>
         </ul>
-        <ul class="slides__dot-list">
+        <ul class="slides__dot-list tariff__dots">
           <li class="slides__dot-item">
             <span class="slides__dot"></span>
           </li>
@@ -216,7 +264,7 @@
       </section>
     </main>
 
-    <footer class="contacts">
+    <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__content">
           <p class="contacts__paragraph">
@@ -240,6 +288,42 @@
           </ul>
         </div>
         <div class="contacts__map"></div>
+      </div>
+    </section>
+
+    <footer class="footer footer--main-page">
+      <div class="footer__wrapper">
+        <div class="logo footer__logo">
+          <a class="logo__link" href="/">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
+              <img class="logo__img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <div class="social-block footer__socials">
+          <ul class="social-block__list">
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                <img class="social-block__icon social-block__icon--twitter" src="./img/icon-twitter.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                <img class="social-block__icon social-block__icon--facebook" src="./img/icon-facebook.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                <img class="social-block__icon social-block__icon--youtube" src="./img/icon-youtube.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">Разработано</span>
+          <img class="footer__copyright-icon" src="./img/logo-htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy">
+        </div>
       </div>
     </footer>
   </body>
