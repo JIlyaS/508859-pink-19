@@ -7,6 +7,11 @@
       width: 22px;
       height: 22px;
     }
+
+    @media(min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
   }
 
   &--fill {
@@ -17,6 +22,13 @@
     @media(min-width: $tablet-width) {
       width: 24px;
       height: 22px;
+      opacity: 1;
+      fill: $info-text-color;
+    }
+
+    @media(min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
     }
   }
 
@@ -28,6 +40,13 @@
     @media(min-width: $tablet-width) {
       width: 16px;
       height: 16px;
+      opacity: 1;
+      fill: $info-text-color;
+    }
+
+    @media(min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
     }
   }
 }

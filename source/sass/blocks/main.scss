@@ -12,10 +12,19 @@
     margin-bottom: 80px;
   }
 
+  @media(min-width: $desktop-width) {
+    margin-bottom: 92px;
+  }
+
   &--footer {
     @media(min-width: $tablet-width) {
       margin-top: 24px;
       margin-bottom: 72px;
+    }
+
+    @media(min-width: $desktop-width) {
+      margin-top: 14px;
+      margin-bottom: 69px;
     }
   }
 }
@@ -31,12 +40,9 @@
     margin: 0 auto;
     font-size: 18px;
   }
-}
 
-.main__photo-list {
-  @media(min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  @media(min-width: $desktop-width) {
+    max-width: 580px;
+    font-size: 18px;
   }
 }

@@ -51,10 +51,14 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
-    line-height: 110px;
+    line-height: 35px;
 
     font-family: $main-font;
     font-weight: 400;
     text-transform: none;
+  }
+
+  &--active {
+    border-bottom: 2px solid $white;
   }
 }
