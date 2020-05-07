@@ -4,6 +4,10 @@
     height: 127px;
   }
 
+  @media (min-width: $desktop-width) {
+    height: 197px;
+  }
+
   &--main-page {
     display: none;
 

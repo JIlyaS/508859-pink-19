@@ -3,11 +3,23 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 936px;
+    margin: 0 auto;
+  }
 }
 
 .main-form__container {
-  padding-top: 41px;
-  padding-bottom: 44px;
+  padding-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 60px;
+  }
 
   &--user,
   &--contacts,
@@ -28,17 +40,41 @@
     @media (min-width: $tablet-width) {
       order: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      max-width: 435px;
+    }
   }
 
   &--application {
     @media (min-width: $tablet-width) {
       order: 1;
     }
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      top: -7px;
+      width: 50%;
+      max-width: 435px;
+    }
+
+    .main-form__wrap--fieldset {
+      @media (min-width: $desktop-width) {
+        padding-right: 0;
+      }
+    }
   }
 
   &--contacts {
+    padding-top: 41px;
     @media (min-width: $tablet-width) {
       order: 2;
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
     }
   }
 
@@ -46,11 +82,28 @@
     @media (min-width: $tablet-width) {
       order: 3;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 
   &--emotions {
     @media (min-width: $tablet-width) {
       order: 4;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+
+    .main-form__title {
+      margin-bottom: 19px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 47px;
+      }
     }
   }
 }
@@ -63,12 +116,16 @@
     max-width: 620px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+
   &--fieldset {
     border: none;
     padding: 0;
 
     @media (min-width: $tablet-width) {
-      padding: 0 60px 56px;
+      padding: 0 60px 49px;
       border: 2px solid $border-color;
     }
   }
@@ -77,7 +134,7 @@
 .main-form__info {
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 8px;
+  margin-bottom: 49px;
   margin-top: 54px;
   color: $main-text-color;
   font-size: 14px;
@@ -87,9 +144,13 @@
   @media (min-width: $tablet-width) {
     max-width: 490px;
     margin-top: 100px;
-    margin-bottom: 35px;
+    margin-bottom: 78px;
 
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 760px;
   }
 }
 
@@ -105,6 +166,7 @@
   display: block;
   max-width: 220px;
   margin: 0 auto;
+  padding-top: 41px;
   margin-bottom: 40px;
   color: $info-text-color;
   font-size: 14px;
@@ -114,12 +176,36 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 370px;
+    max-width: 450px;
     padding: 0 25px;
+    margin-bottom: 47px;
+    white-space: nowrap;
   }
 
-  &--mb {
-    margin-bottom: 20px;
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.main-form__block {
+  &--progress {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.main-form__check-block {
+  margin-bottom: 45px;
+
+  @media (min-width: $desktop-width) {
+      margin-bottom: 0;
   }
 }
 
@@ -130,6 +216,14 @@
   resize: none;
 }
 
+.main-form__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .main-form__submit-block {
   max-width: 280px;
   margin: 0 auto;
@@ -138,13 +232,28 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     order: 5;
+    max-width: none;
+    width: 620px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 936px;
+    margin: 0 auto;
   }
 }
 
 .main-form__submit {
   display: block;
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-form__star {
@@ -157,4 +266,11 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.main-form__contacts-block {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -12,6 +12,33 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--flex {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 371px;
+      margin-bottom: 0;
+    }
+
+    .form-block__input {
+      @media (min-width: $tablet-width) {
+        padding-right: 60px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .form-block__label {
+      @media (min-width: $tablet-width) {
+        padding: 0 18px;
+        order: 1;
+      }
+    }
+  }
 }
 
 .form-block__label {
@@ -25,58 +52,72 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
-  }
-}
-
-.form-block__radio-label {
-  display: block;
-  margin-bottom: 39px;
-  color: $main-text-color;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 35px;
-
-  &:last-child {
     margin-bottom: 0;
   }
 }
 
-.form-block__radio-text {
+.form-block__input-block {
   position: relative;
-  display: block;
-  padding-left: 70px;
-  user-select: none;
-  cursor: pointer;
+  width: 100%;
+  &--contacts-num,
+  &--contacts-email {
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    cursor: pointer;
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: '';
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        display: block;
+        width: 60px;
+        height: 57px;
+
+        background-color: $border-color;
+      }
+    }
   }
 
-  &::before {
-    width: 35px;
-    height: 36px;
-    background-color: $white;
-    border: 2px solid $border-color;
-    border-radius: 50%;
+  &--contacts-num {
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: '';
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+
+        display: block;
+        width: 20px;
+        height: 19px;
+
+        background-image: url('../../img/icon-phone.svg');
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+      }
+    }
   }
-}
 
-.form-block__radio:checked ~ .form-block__radio-text::after {
-  left: 17px;
-  top: 9px;
-  transform: translate(-50%);
+  &--contacts-email {
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: '';
 
-  width: 19px;
-  height: 18px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
 
-  background-image: url('../../img/icon-map-marker.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+        display: block;
+        width: 18px;
+        height: 13px;
+
+        background-image: url('../../img/icon-mail.svg');
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+      }
+    }
+  }
 }
 

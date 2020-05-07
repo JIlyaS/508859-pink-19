@@ -38,4 +38,10 @@
     margin: 0 auto;
     padding-top: 184px;
   }
+
+  &--form {
+    @media (min-width: $desktop-width) {
+      max-width: 750px;
+    }
+  }
 }
