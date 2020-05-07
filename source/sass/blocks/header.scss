@@ -17,9 +17,20 @@
 
   &--active {
     position: relative;
-    height: 360px;
+    height: 313px;
     background-color: $main-text-color;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @media (min-width: $tablet-width) {
+      height: 359px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      height: 110px;
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -74,6 +85,11 @@
 .header--active .header__wrapper {
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header--active .header__burger-btn {
