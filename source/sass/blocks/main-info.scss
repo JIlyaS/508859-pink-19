@@ -4,7 +4,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(175deg, #ffffff 38%, #f2f2f2 38%);
+    background-image: linear-gradient(175deg, #ffffff 37%, #f2f2f2 37%);
   }
 
   @media (min-width: $desktop-width) {
@@ -13,10 +13,10 @@
 }
 
 .main-info__wrapper {
-  padding: 40px 20px 322px;
+  padding: 43px 20px 318px;
 
   @media (min-width: $tablet-width) {
-    padding: 59px 20px 0;
+    padding: 50px 20px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
 }
 
 .main-info__text {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: $main-text-color;
   font-family: $main-font-light;
   font-size: 24px;
@@ -46,6 +46,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     font-size: 40px;
+    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,8 +71,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 126px;
-    margin-left: 290px;
+    margin-top: 45px;
+    margin-left: 310px;
     text-align: left;
   }
 
@@ -84,10 +85,10 @@
 }
 
 .main-info__item {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -184,6 +185,8 @@
 }
 
 .main-info__header {
+  margin-top: 0;
+  margin-bottom: 12px;
   color: $main-text-color;
   font-family: $main-font-bold;
   font-size: 18px;
@@ -192,7 +195,15 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+  }
+}
+
+.effect-block__effect {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 

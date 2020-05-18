@@ -33,7 +33,8 @@
 
 .nav__item {
   background-color: $main-text-color;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  // box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(0, 0, 0, 1);
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -44,7 +45,7 @@
 .nav__link {
   display: block;
   text-align: center;
-  line-height: 63px;
+  line-height: 65px;
   color: $white;
   font-family: $main-font-bold;
   font-size: 18px;

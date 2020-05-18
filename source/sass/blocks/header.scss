@@ -93,9 +93,20 @@
 }
 
 .header--active .header__burger-btn {
+  position: relative;
+  top: -3px;
+  right: -2px;
+
   width: 24px;
   height: 23px;
   background: url('../../img/icon-menu-cross.svg');
   background-repeat: no-repeat;
+}
+
+.header__logo-img {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -5px;
+  }
 }
 

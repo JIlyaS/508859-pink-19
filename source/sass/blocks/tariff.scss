@@ -26,7 +26,6 @@
 
 .tariff__head-text {
   font-size: 14px;
-  // line-height: 30px;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
@@ -39,6 +38,7 @@
   justify-content: center;
   overflow: hidden;
   background-color: $white;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -46,7 +46,7 @@
 }
 
 .tariff__item {
-  min-width: 276px;
+  min-width: 280px;
   margin: 0;
   padding: 0;
   border-right: 2px solid $border-color;
@@ -59,7 +59,7 @@
 .tariff__top-block {
   position: relative;
   width: 100%;
-  padding: 23px 0 21px;
+  padding: 17px 0 21px;
   text-align: center;
   background-color: $main-text-color;
 
@@ -204,7 +204,7 @@
 .tariff__desc-item {
   position: relative;
   width: 100%;
-  padding: 21px;
+  padding: 14px 23px;
   padding-right: initial;
   border-top: 2px solid transparent;
   border-bottom: 2px solid $border-color;
@@ -234,7 +234,8 @@
   }
 
   &--yes::after {
-    right: 17px;
+    top: 18px;
+    right: 16px;
     width: 31px;
     height: 23px;
     background-image: url('../../img/icon-yes.svg');
@@ -244,7 +245,8 @@
   }
 
   &--no::after {
-    right: 19px;
+    top: 13px;
+    right: 18px;
     width: 27px;
     height: 27px;
     background-image: url('../../img/icon-no.svg');

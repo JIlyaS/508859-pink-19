@@ -1,9 +1,5 @@
-.contacts {
-
-}
-
 .contacts__wrapper {
-  padding-top: 50px;
+  padding-top: 41px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -34,19 +30,19 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -34px;
+    bottom: -36px;
     width: 0;
     height: 0;
     // border-left: calc(50vw - 9px) solid transparent;
     // border-right: calc(50vw - 9px) solid transparent;
     border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
+    border-right: 159px solid transparent;
     border-top: 5vh solid $white;
 
     @media (min-width: $tablet-width) {
       bottom: -43px;
-      border-left: 330px solid transparent;
-      border-right: 330px solid transparent;
+      border-left: 320px solid transparent;
+      border-right: 320px solid transparent;
       border-top: 6vh solid $white;
     }
 
@@ -60,11 +56,12 @@
 }
 
 .contacts__paragraph {
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 
   color: $main-text-color;
   font-family: $main-font-light;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
@@ -87,7 +84,7 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 215px;
+  max-width: 240px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -100,7 +97,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -127,7 +124,7 @@
 
 .contacts__title {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 4px;
   color: $main-text-color;
   font-family: $main-font-bold;
   font-size: 18px;
@@ -146,6 +143,7 @@
   color: $info-text-color;
   font-family: $main-font-light;
   font-size: 24px;
+  letter-spacing: 0.4px;
 }
 
 .contacts__map {

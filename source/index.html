@@ -9,11 +9,11 @@
     <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
         <div class="header__container">
-          <a class="logo" href="/">
+          <a class="logo header__logo" href="/">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
-              <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+              <img class="logo__img header__logo-img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
             </picture>
           </a>
           <button class="header__burger-btn" type="button">
@@ -43,7 +43,7 @@
       <div class="downloads">
         <div class="downloads__wrapper">
           <div class="downloads__top-block">
-            <p class="text downloads__text">Взляните на жизнь иначе!</p>
+            <p class="text downloads__text">Взгляните на жизнь иначе!</p>
           </div>
           <div class="downloads__bottom-block">
             <button class="btn btn--border downloads__btn-download">Скачать приложение</button>
@@ -109,7 +109,9 @@
               <div class="effect-block__timer"></div>
             </div>
             <div class="effect-block__block effect-block__block--info">
-              <h3 class="effect-block__header">Эффект на 24 часа!</h3>
+              <h3 class="effect-block__header">
+                <span class="effect-block__effect">Эффект</span> на 24 часа!
+              </h3>
               <p class="effect-block__text">
                 Британские ученые провели исследования
                 и доказали, что положительный эффект
