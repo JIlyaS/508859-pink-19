@@ -23,7 +23,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="/">Главная</a>
+              <a class="nav__link" href="/">Главная</a> <!-- nav__link--active -->
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./photo.html">Фотографии</a>
@@ -160,7 +160,7 @@
               </p>
             </li>
           </ul>
-          <ul class="slides__dot-list">
+          <ul class="slides__dot-list reviews__dot-list">
             <li class="slides__dot-item">
               <span class="slides__dot slides__dot--active"></span>
             </li>
@@ -269,25 +269,27 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__content">
-          <p class="contacts__paragraph">
-            Остались вопросы? Свяжитесь с нами!
-          </p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title">Звоните:</b>
-              <a class="contacts__info" href="tel:88125556666">+7(812)555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Пишите:</b>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b>
-              <p class="contacts__info" class="contacts__text">
-                ул. Большая Конюшенная, 19/8
-              </p>
-            </li>
-          </ul>
+          <div class="contacts__container">
+            <p class="contacts__paragraph">
+              Остались вопросы? Свяжитесь с нами!
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <b class="contacts__title">Звоните:</b>
+                <a class="contacts__info" href="tel:88125556666">+7(812)555-66-66</a>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Пишите:</b>
+                <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Приезжайте в гости:</b>
+                <p class="contacts__info" class="contacts__text">
+                  ул. Большая Конюшенная, 19/8
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="contacts__map"></div>
       </div>
@@ -296,10 +298,10 @@
     <footer class="footer footer--main-page">
       <div class="footer__wrapper">
         <div class="logo footer__logo">
-          <a class="logo__link" href="/">
+          <a class="logo__link footer__logo-link" href="/">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-              <img class="logo__img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+              <img class="logo__img footer__logo-img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
             </picture>
           </a>
         </div>

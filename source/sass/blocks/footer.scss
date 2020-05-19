@@ -38,7 +38,7 @@
   @media (min-width: $desktop-width) {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 7px;
   }
 }
 
@@ -48,6 +48,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.footer__logo-img {
+  position: relative;
+  top: -5px;
 }
 
 .footer__socials {
@@ -71,7 +76,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 150px;
+    position: relative;
+    left: -5px;
+    width: 154px;
   }
 }
 
@@ -82,5 +89,14 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+}
+
+.footer__copyright-icon {
+  position: relative;
+  top: 3px;
+
+  @media (min-width: $desktop-width) {
+    top: 4px;
   }
 }

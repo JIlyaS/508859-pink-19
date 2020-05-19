@@ -13,10 +13,10 @@
 .effect-block__wrapper {
   display: flex;
   @media (min-width: $desktop-width) {
-    justify-content: space-around;
+    justify-content: flex-start;
     max-width: 960px;
     margin: 0 auto;
-    padding-bottom: 67px;
+    padding-bottom: 61px;
   }
 }
 
@@ -24,9 +24,15 @@
    width: 330px;
    margin-top: 58px;
 
+  @media (min-width: $desktop-width) {
+    width: 375px;
+    margin-top: 26px;
+  }
+
   &--info {
     margin-top: 51px;
     @media (min-width: $desktop-width) {
+      margin-top: 74px;
       width: 525px;
     }
   }
@@ -44,7 +50,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: none;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 
     font-size: 30px;
     line-height: 30px;
@@ -53,12 +59,12 @@
 
 .effect-block__text {
   margin-bottom: 12px;
-  padding-right: 34px;
 
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -84,6 +90,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 20px 100%;
+
+  @media (min-width: $desktop-width) {
+    height: 350px;
+    position: relative;
+    left: 10px;
+    background-size: 80%;
+    background-position: 0;
+  }
 }
 
 .effect-block__timer-text {

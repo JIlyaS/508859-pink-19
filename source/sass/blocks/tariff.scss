@@ -2,9 +2,13 @@
   padding-bottom: 48px;
   background-color: $bg-block;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 31px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 40px;
-    padding-bottom: 98px;
+    padding-bottom: 56px;
   }
 }
 
@@ -53,6 +57,11 @@
 
   @media (min-width: $tablet-width) {
     min-width: auto;
+    max-width: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 237px;
   }
 }
 
@@ -67,19 +76,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 75px;
+    width: 153px;
+    height: 78px;
     padding: 0;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 94px;
+    width: 235px;
+    height: 98px;
+    padding-top: 0;
   }
 
   &--head {
     background-color: transparent;
 
     @media (min-width: $desktop-width) {
-      width: 233px;
+      width: 231px;
     }
   }
 }
@@ -107,8 +120,8 @@
 
 .tariff__hit-text {
   position: absolute;
-  left: 10px;
-  top: 13px;
+  left: 7px;
+  top: 8px;
   display: inline-block;
   color: $white;
   font-size: 14px;
@@ -117,7 +130,6 @@
   transform: rotate(-45deg);
 
   @media (min-width: $tablet-width) {
-    font-size: 10px;
     line-height: 21px;
   }
 
@@ -169,7 +181,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 231px;
   }
 }
 
@@ -177,15 +189,15 @@
   width: 153px;
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 235px;
   }
 
   .tariff__desc-item {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 46px;
-    padding-left: 15px;
+    height: 61px;
+    padding-left: 21px;
     text-align: left;
 
     border-left: 2px solid $border-color;
@@ -204,6 +216,7 @@
 .tariff__desc-item {
   position: relative;
   width: 100%;
+  height:61px;
   padding: 14px 23px;
   padding-right: initial;
   border-top: 2px solid transparent;
@@ -215,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 235px;
   }
 
   &--yes::after,
@@ -242,6 +255,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 80px;
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      top: 50%;
+      right: auto;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &--no::after {
@@ -253,6 +278,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 80px;
+      top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      top: 50%;
+      right: auto;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
