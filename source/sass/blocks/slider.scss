@@ -37,4 +37,35 @@
   background-color: $bg-block;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+    right: 40px;
+    width: 14px;
+    height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 203px;
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      right: 162px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 29px;
+    }
+  }
+
+  &--third {
+    @media (min-width: $tablet-width) {
+      right: 86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 113px;
+    }
+  }
 }
