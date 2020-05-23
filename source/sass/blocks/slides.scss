@@ -1,6 +1,3 @@
-.slides {
-}
-
 .slides--reviews {
   .slides__item {
     display: flex;
@@ -9,7 +6,7 @@
 
   .slides__list {
     @media (min-width: $desktop-width) {
-      max-width: 685px;
+      max-width: 728px;
       margin: 0 auto;
     }
   }
@@ -25,7 +22,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: 50%;
+      top: calc(50% - 30px);
       transform: translateY(-50%);
 
       width: 22px;
@@ -40,30 +37,29 @@
     }
 
     &::before {
-      left: 0;
+      left: 10px;
       background-image: url("../../img/icon-review-arrow-left.svg");
     }
 
     &::after {
-      right: 0;
+      right: 10px;
       background-image: url("../../img/icon-review-arrow-right.svg");
     }
   }
 }
 
 .slides__item {
-  padding: 0 22px;
+  padding: 0 20px;
 }
 
 .slides__dot-list {
   @include list-reset;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .slides__dot-item {
-  margin-right: 19px;
+  margin-right: 13px;
 
   &:last-child {
     margin-right: 0;

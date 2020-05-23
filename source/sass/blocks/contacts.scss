@@ -1,24 +1,51 @@
-.contacts {
-
-}
-
 .contacts__wrapper {
-  padding-top: 50px;
+  padding-top: 41px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 960px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 65px;
   }
 }
 
 .contacts__content {
   position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -36px;
+    width: 0;
+    height: 0;
+    // border-left: calc(50vw - 9px) solid transparent;
+    // border-right: calc(50vw - 9px) solid transparent;
+    border-left: 160px solid transparent;
+    border-right: 159px solid transparent;
+    border-top: 5vh solid $white;
+
+    @media (min-width: $tablet-width) {
+      bottom: -57px;
+      border-left: 330px solid transparent;
+      border-right: 329px solid transparent;
+      border-top: 8vh solid $white;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -108px;
+      border-left: calc(50vw - 10px) solid transparent;
+      border-right: calc(50vw - 10px) solid transparent;
+      border-top: 15vh solid #ffffff;
+    }
+  }
+}
+
+.contacts__container {
   max-width: $mobile-width;
 
   @media (min-width: $tablet-width) {
@@ -26,59 +53,34 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -34px;
-    width: 0;
-    height: 0;
-    // border-left: calc(50vw - 9px) solid transparent;
-    // border-right: calc(50vw - 9px) solid transparent;
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    border-top: 5vh solid $white;
-
-    @media (min-width: $tablet-width) {
-      bottom: -43px;
-      border-left: 330px solid transparent;
-      border-right: 330px solid transparent;
-      border-top: 6vh solid $white;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: -51px;
-      border-left: 480px solid transparent;
-      border-right: 480px solid transparent;
-      border-top: 7vh solid $white;
-    }
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
 
 .contacts__paragraph {
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 
   color: $main-text-color;
   font-family: $main-font-light;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 45px;
 
     font-size: 40px;
+    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 480px;
-    margin-bottom: 70px;
+    margin-bottom: 58px;
     font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -87,7 +89,7 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 215px;
+  max-width: 240px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -97,10 +99,14 @@
 
     max-width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    max-height: 124px;
+  }
 }
 
 .contacts__item {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -112,11 +118,13 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
+    margin-bottom: 0;
   }
 
   &:nth-child(2) {
     @media (min-width: $desktop-width) {
       order: 1;
+      margin-bottom: 0;
     }
   }
 
@@ -127,17 +135,17 @@
 
 .contacts__title {
   display: block;
-  margin-bottom: 11px;
+  margin-bottom: 4px;
   color: $main-text-color;
   font-family: $main-font-bold;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 23px;
     font-size: 18px;
   }
 }
@@ -146,6 +154,8 @@
   color: $info-text-color;
   font-family: $main-font-light;
   font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
 }
 
 .contacts__map {
@@ -157,12 +167,12 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    height: 375px;
+    height: 361px;
     background-image: url('../../img/bg-map-tablet@1x.jpg');
   }
 
   @media (min-width: $desktop-width) {
-    height: 500px;
+    height: 502px;
     background-image: url('../../img/bg-map-desktop@1x.jpg');
   }
 }

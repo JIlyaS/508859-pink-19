@@ -9,11 +9,11 @@
     <header class="header"> <!-- header--active -->
       <div class="header__wrapper">
         <div class="header__container">
-          <a class="logo" href="/">
+          <a class="logo header__logo" href="/">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
-              <img class="logo__img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
+              <img class="logo__img header__logo-img" width="74" height="23" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
             </picture>
           </a>
           <button class="header__burger-btn" type="button">
@@ -23,7 +23,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="/">Главная</a>
+              <a class="nav__link" href="/">Главная</a> <!-- nav__link--active -->
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./photo.html">Фотографии</a>
@@ -43,7 +43,7 @@
       <div class="downloads">
         <div class="downloads__wrapper">
           <div class="downloads__top-block">
-            <p class="text downloads__text">Взляните на жизнь иначе!</p>
+            <p class="text downloads__text">Взгляните на жизнь иначе!</p>
           </div>
           <div class="downloads__bottom-block">
             <button class="btn btn--border downloads__btn-download">Скачать приложение</button>
@@ -109,7 +109,9 @@
               <div class="effect-block__timer"></div>
             </div>
             <div class="effect-block__block effect-block__block--info">
-              <h3 class="effect-block__header">Эффект на 24 часа!</h3>
+              <h3 class="effect-block__header">
+                <span class="effect-block__effect">Эффект</span> на 24 часа!
+              </h3>
               <p class="effect-block__text">
                 Британские ученые провели исследования
                 и доказали, что положительный эффект
@@ -158,7 +160,7 @@
               </p>
             </li>
           </ul>
-          <ul class="slides__dot-list">
+          <ul class="slides__dot-list reviews__dot-list">
             <li class="slides__dot-item">
               <span class="slides__dot slides__dot--active"></span>
             </li>
@@ -267,25 +269,27 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <div class="contacts__content">
-          <p class="contacts__paragraph">
-            Остались вопросы? Свяжитесь с нами!
-          </p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <b class="contacts__title">Звоните:</b>
-              <a class="contacts__info" href="tel:88125556666">+7(812)555-66-66</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Пишите:</b>
-              <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-            <li class="contacts__item">
-              <b class="contacts__title">Приезжайте в гости:</b>
-              <p class="contacts__info" class="contacts__text">
-                ул. Большая Конюшенная, 19/8
-              </p>
-            </li>
-          </ul>
+          <div class="contacts__container">
+            <p class="contacts__paragraph">
+              Остались вопросы? Свяжитесь с нами!
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <b class="contacts__title">Звоните:</b>
+                <a class="contacts__info" href="tel:88125556666">+7(812)555-66-66</a>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Пишите:</b>
+                <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__item">
+                <b class="contacts__title">Приезжайте в гости:</b>
+                <p class="contacts__info" class="contacts__text">
+                  ул. Большая Конюшенная, 19/8
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="contacts__map"></div>
       </div>
@@ -294,10 +298,10 @@
     <footer class="footer footer--main-page">
       <div class="footer__wrapper">
         <div class="logo footer__logo">
-          <a class="logo__link" href="/">
+          <a class="logo__link footer__logo-link" href="/">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
-              <img class="logo__img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
+              <img class="logo__img footer__logo-img" width="147px" height="40px" src="./img/logo-pink-blue-mobile.svg" alt="Логотип">
             </picture>
           </a>
         </div>

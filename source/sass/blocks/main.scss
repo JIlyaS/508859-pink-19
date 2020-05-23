@@ -1,30 +1,28 @@
-.main {
-
-}
-
 .main__info {
-  margin: 55px 35px;
+  margin: 45px 38px 49px;
   text-align: center;
   background-color: $white;
 
   @media(min-width: $tablet-width) {
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 93px;
+    margin-bottom: 76px;
   }
 
   @media(min-width: $desktop-width) {
-    margin-bottom: 92px;
+    margin-bottom: 88px;
   }
 
   &--footer {
+    margin: 45px 29px 43px;
+
     @media(min-width: $tablet-width) {
-      margin-top: 24px;
-      margin-bottom: 72px;
+      margin-top: 45px;
+      margin-bottom: 69px;
     }
 
     @media(min-width: $desktop-width) {
-      margin-top: 14px;
-      margin-bottom: 69px;
+      margin-top: 5px;
+      margin-bottom: 66px;
     }
   }
 }

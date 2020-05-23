@@ -61,6 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 108px;
     padding: 0;
   }
 }
@@ -93,9 +94,29 @@
 }
 
 .header--active .header__burger-btn {
+  position: relative;
+  top: -3px;
+  right: -2px;
+
   width: 24px;
   height: 23px;
   background: url('../../img/icon-menu-cross.svg');
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 1px;
+    right: 0;
+  }
+}
+
+.header__logo-img {
+  position: relative;
+  @media (min-width: $tablet-width) {
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+  }
 }
 

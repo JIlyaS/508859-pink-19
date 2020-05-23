@@ -13,7 +13,8 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 463px;
+  height: 461px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     height: 730px;
@@ -38,25 +39,25 @@
     background: url('../../img/iphone-hand-mobile@1x.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom 100px;
 
     @media (min-width: $tablet-width) {
       left: auto;
-      right: 0;
-      width: 470px;
+      right: -20px;
+      width: 515px;
       height: 545px;
 
       background: url('../../img/iphone-hand-tablet@1x.png');
       background-repeat: no-repeat;
-      background-size: 137%;
+      background-size: 136%;
       background-position: bottom right;
     }
 
     @media (min-width: $desktop-width) {
       left: auto;
-      right: 0;
+      right: 5px;
       width: 100%;
-      height: 650px;
+      height: 645px;
 
       background: url('../../img/iphone-hand-desktop@1x.png');
       background-repeat: no-repeat;
@@ -71,24 +72,27 @@
   color: $white;
   font-family: $main-font-light;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 212px;
+    top: 204px;
     left: 75px;
     max-width: 186px;
     padding: 0;
     font-size: 40px;
+    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 220px;
-    left: 165px;
+    top: 217px;
+    left: 140px;
 
     max-width: 280px;
     font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -102,12 +106,11 @@
     left: 20px;
     width: 300px;
     padding: 0;
-    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 440px;
-    left: 165px;
+    top: 448px;
+    left: 130px;
   }
 }
 
@@ -115,11 +118,15 @@
   width: 100%;
   height: 55px;
   margin: 0 auto;
+  font-family: $main-font-bold;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 10px;
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    font-family: $main-font-bold;
-    font-weight: 700;
+    letter-spacing: 0;
   }
 }
 
@@ -130,13 +137,18 @@
   align-items: baseline;
 
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 28px;
-  max-width: 215px;
+  margin-top: 30px;
+  margin-bottom: 19px;
+  max-width: 205px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 66px;
+    margin-bottom: 53px;
   }
 }
 

@@ -1,19 +1,24 @@
 .reviews {
-  background-image: linear-gradient(175deg, #ffffff 82%, #f2f2f2 82%);
+  background-image: linear-gradient(175deg, #ffffff 80%, #f2f2f2 80%);
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(175deg, #ffffff 88%, #f2f2f2 88%);
+    background-image: linear-gradient(175deg, #ffffff 89%, #f2f2f2 89%);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(175deg, #ffffff 90%, #f2f2f2 90%);
+    background-image: linear-gradient(175deg, #ffffff 89%, #f2f2f2 89%);
   }
 }
 
 .reviews__slides {
   position: relative;
-  padding-top: 49px;
-  padding-bottom: 135px;
+  padding-top: 42px;
+  padding-bottom: 133px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 960px;
@@ -42,6 +47,14 @@
   }
 }
 
+.reviews .reviews__list {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+}
+
 .reviews__author {
   @media (min-width: $tablet-width) {
     order: 1;
@@ -50,19 +63,22 @@
 
 .reviews__author-name {
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: $black;
+  font-family: $main-font-bold;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    font-size: 24px;
   }
 }
 
@@ -71,6 +87,11 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }
 
@@ -83,6 +104,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
+  }
+}
+
+.reviews .reviews__dot-list {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
