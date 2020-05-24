@@ -49,4 +49,31 @@
       height: 32px;
     }
   }
+
+  &--crop,
+  &--fill,
+  &--contrast {
+    fill: $main-text-color;
+    opacity: 0.3;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      fill: $info-text-color;
+      opacity: 1;
+    }
+
+    @media(min-width: $tablet-width) {
+      fill: $info-text-color;
+      opacity: 1;
+
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }

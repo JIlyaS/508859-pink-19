@@ -37,6 +37,7 @@
   background-color: $bg-block;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     top: -6px;
@@ -47,6 +48,10 @@
 
   @media (min-width: $desktop-width) {
     right: 203px;
+  }
+
+  &:active {
+    background-color: $info-text-color;
   }
 
   &--second {

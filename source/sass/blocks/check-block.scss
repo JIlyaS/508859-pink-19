@@ -1,6 +1,6 @@
 .check-block {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   color: $main-text-color;
   font-size: 18px;
   font-weight: 400;
@@ -18,6 +18,10 @@
   user-select: none;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+
   &::before,
   &::after {
     content: '';
@@ -26,13 +30,27 @@
     top: 0;
     display: block;
     cursor: pointer;
+    transition: 0.3s;
   }
 
   &::before {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: $white;
     border: 2px solid $border-color;
+
+    @media (min-width: $tablet-width) {
+      left: -3px;
+      top: -3px;
+    }
+  }
+
+  &:hover::before {
+    border: 2px solid $main-text-color;
+  }
+
+  &:active::before {
+    border: 2px solid $info-text-color;
   }
 }
 
@@ -45,4 +63,8 @@
   background-image: url('../../img/icon-check.svg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    left: 6px;
+  }
 }

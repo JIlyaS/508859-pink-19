@@ -123,6 +123,17 @@
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    border: 3px solid $white;
+    background-color: $white;
+    color: $info-text-color;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;

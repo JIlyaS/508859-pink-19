@@ -49,6 +49,7 @@
   font-family: $main-font-bold;
   font-size: 18px;
   text-transform: uppercase;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     line-height: 64px;
@@ -62,9 +63,31 @@
     text-transform: none;
   }
 
+  &:hover {
+    color: $info-text-color;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   &--active {
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid $white;
+
+      &:hover {
+        border-bottom-color: $info-text-color;
+      }
+
+      &:active {
+        border-bottom-color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 }

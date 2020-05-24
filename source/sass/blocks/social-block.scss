@@ -24,12 +24,22 @@
   align-items: center;
   width: 50px;
   height: 50px;
-  border: 2px solid $social-border-color;
+  border: 3px solid $social-border-color;
   border-radius: 50%;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 50px;
     height: 50px;
+  }
+
+  &:hover {
+    border: 3px solid $main-text-color;
+  }
+
+  &:active {
+    border: 3px solid $social-border-color;
+    opacity: 0.3;
   }
 }
 

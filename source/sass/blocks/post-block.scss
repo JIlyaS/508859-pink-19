@@ -162,7 +162,8 @@
     }
   }
 
-  &--active {
+  &--active svg {
+    opacity: 1;
     fill: $info-text-color;
   }
 }
@@ -252,8 +253,6 @@
   width: 280px;
   margin-bottom: 12px;
 
-  border: 3px solid $info-text-color;
-  color: $info-text-color;
   font-family: $main-font-bold;
   font-size: 18px;
   font-weight: 700;
@@ -275,14 +274,6 @@
     @media(min-width: $tablet-width) {
       margin-bottom: 0;
     }
-  }
-
-  &--disabled {
-    cursor: default;
-    color: $main-text-color;
-    border: 3px solid $main-text-color;
-    opacity: 0.1;
-    outline: none;
   }
 }
 
