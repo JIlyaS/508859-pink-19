@@ -5,13 +5,52 @@
 
   &--border {
     background-color: transparent;
-    border: 3px solid $white;
+    border: 3px solid $info-text-color;
+    color: $info-text-color;
     border-radius: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $info-text-color;
+      border-color: $info-text-color;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $info-text-color;
+      border-color: $info-text-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      border: 2px solid #e5e5e5;
+      background-color: $border-color;
+      border-color: $border-color;
+    }
+  }
+
+  &--border-cancel {
+    color: $main-text-color;
+    border: 3px solid $main-text-color;
+    opacity: 0.1;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      border: 3px solid $main-text-color;
+      background-color: $main-text-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--submit {
-    width: 276px;
-    height: 59px;
+    width: 279px;
+    height: 63px;
     border: 2px solid $btn-submit-color;
     background-color: $btn-submit-color;
 
@@ -21,9 +60,25 @@
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    transition: 0.3s;
 
     @media (min-width: $tablet-width) {
-      width: 296px;
+      width: 300px;
+    }
+
+    &:hover {
+      background-color: $btn-submit-hover-color;
+      border-color: $btn-submit-hover-color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      border: 2px solid #e5e5e5;
+      background-color: $border-color;
+      border-color: $border-color;
     }
   }
 

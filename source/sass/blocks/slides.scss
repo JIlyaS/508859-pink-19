@@ -15,41 +15,58 @@
 .slides__list {
   @include list-reset;
   text-align: center;
-
-  @media (min-width: $desktop-width) {
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: calc(50% - 30px);
-      transform: translateY(-50%);
-
-      width: 22px;
-      height: 41px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-
-      opacity: 0.3;
-      cursor: pointer;
-    }
-
-    &::before {
-      left: 10px;
-      background-image: url("../../img/icon-review-arrow-left.svg");
-    }
-
-    &::after {
-      right: 10px;
-      background-image: url("../../img/icon-review-arrow-right.svg");
-    }
-  }
 }
 
 .slides__item {
   padding: 0 20px;
+}
+
+.slides__arrow-btn {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slides__arrow-left-btn,
+.slides__arrow-right-btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  transform: translateY(-50%);
+
+  width: 22px;
+  height: 41px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slides__arrow-left-btn:hover,
+.slides__arrow-right-btn:hover {
+  opacity: 0.6;
+}
+
+.slides__arrow-left-btn:active,
+.slides__arrow-right-btn:active {
+  opacity: 0.1;
+}
+
+.slides__arrow-left-btn {
+  left: 10px;
+  background-image: url("../../img/icon-review-arrow-left.svg");
+}
+
+.slides__arrow-right-btn {
+  right: 10px;
+  background-image: url("../../img/icon-review-arrow-right.svg");
 }
 
 .slides__dot-list {
@@ -76,6 +93,15 @@
   opacity: 0.3;
   transition: 0.3s;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &--active {
     border-color: $main-text-color;

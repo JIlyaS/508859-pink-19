@@ -20,7 +20,7 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 30px;
 
   background-color: $white;
   text-align: center;
@@ -95,8 +95,17 @@
 .footer__copyright-icon {
   position: relative;
   top: 3px;
+  transition: 0.3s;
 
   @media (min-width: $desktop-width) {
     top: 4px;
+  }
+
+  &:hover {
+    fill: $main-text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

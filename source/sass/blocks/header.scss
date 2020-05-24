@@ -77,6 +77,16 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: 0.3s opacity;
+
+  &:hover {
+    background: url('../../img/icon-menu-burger-hover.svg');
+  }
+
+  &:active {
+    background: url('../../img/icon-menu-burger-hover.svg');
+    opacity: 0.3;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -102,10 +112,21 @@
   height: 23px;
   background: url('../../img/icon-menu-cross.svg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     top: 1px;
     right: 0;
+  }
+
+  &:hover {
+    background: url('../../img/icon-menu-cross-hover.svg');
+  }
+
+  &:active {
+    background: url('../../img/icon-menu-cross-hover.svg');
+    opacity: 0.3;
   }
 }
 

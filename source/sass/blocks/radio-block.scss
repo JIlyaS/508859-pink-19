@@ -1,6 +1,6 @@
 .radio-block {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   color: $main-text-color;
   font-size: 18px;
   font-weight: 400;
@@ -18,28 +18,56 @@
   user-select: none;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 74px;
+  }
+
+
   &::before,
   &::after {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: -4px;
     display: block;
     cursor: pointer;
   }
 
   &::before {
-    width: 35px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     background-color: $white;
     border: 2px solid $border-color;
     border-radius: 50%;
+    transition: 0.3s;
+
+    @media (min-width: $tablet-width) {
+      left: -3px;
+      top: -3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 14px;
+      top: -1px;
+    }
+  }
+
+  &:hover::before {
+    border: 2px solid $main-text-color;
+  }
+
+  &:active::before {
+    border: 2px solid $info-text-color;
   }
 }
 
 .radio-block__radio:checked ~ .radio-block__text::after {
-  left: 17px;
-  top: 9px;
+  left: 20px;
+  top: 7px;
   transform: translate(-50%);
 
   width: 19px;
@@ -48,4 +76,14 @@
   background-image: url('../../img/icon-map-marker.svg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    left: 17px;
+    top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 34px;
+    top: 11px;
+  }
 }

@@ -1,6 +1,6 @@
 .input {
-  width: 276px;
-  height: 59px;
+  width: 279px;
+  height: 62px;
   text-indent: 20px;
 
   color: $main-text-color;
@@ -8,8 +8,22 @@
   font-weight: 400;
   line-height: 30px;
   border: 2px solid $border-color;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    text-indent: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 63px;
+  }
+
+  &:hover {
+    border: 2px solid $main-text-color;
+  }
+
+  &:active {
+    border: 2px solid $info-text-color;
   }
 }
