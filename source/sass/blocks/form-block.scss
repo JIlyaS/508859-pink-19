@@ -74,9 +74,15 @@
 
         display: block;
         width: 60px;
-        height: 58px;
+        height: 59px;
 
         background-color: $border-color;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        height: 59px;
       }
     }
   }

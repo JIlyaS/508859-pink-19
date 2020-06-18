@@ -30,7 +30,7 @@
     top: 0;
     display: block;
     cursor: pointer;
-    transition: 0.3s;
+    transition: border-color 0.3s;
   }
 
   &::before {
@@ -55,8 +55,8 @@
 }
 
 .check-block__input:checked ~ .check-block__text::after {
-  top: 9px;
-  left: 8px;
+  top: 10px;
+  left: 9px;
 
   width: 22px;
   height: 16px;

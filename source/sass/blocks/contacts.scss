@@ -21,24 +21,21 @@
     left: 0;
     right: 0;
     bottom: -36px;
-    width: 0;
-    height: 0;
-    border-left: 160px solid transparent;
-    border-right: 159px solid transparent;
-    border-top: 5vh solid $white;
+    width: 100%;
+    height: 36px;
+    background-image: url('../../img/bg-triangle-white-footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
     @media (min-width: $tablet-width) {
-      bottom: -57px;
-      border-left: 330px solid transparent;
-      border-right: 329px solid transparent;
-      border-top: 8vh solid $white;
+      bottom: -70px;
+      height: 70px;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: -108px;
-      border-left: 592px solid transparent;
-      border-right: 591px solid transparent;
-      border-top: 15vh solid #ffffff;
+      bottom: -125px;
+      height: 125px;
     }
   }
 }
