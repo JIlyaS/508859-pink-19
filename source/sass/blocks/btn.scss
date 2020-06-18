@@ -5,10 +5,30 @@
 
   &--border {
     background-color: transparent;
-    border: 3px solid $info-text-color;
-    color: $info-text-color;
+    border: 3px solid $white;
     border-radius: 30px;
     transition: 0.3s;
+  }
+
+  &--white {
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      border-color: $white;
+      color: $info-text-color;
+    }
+
+    &:active {
+      background-color: $white;
+      border-color: $white;
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  &--pink {
+    border: 3px solid $info-text-color;
+    color: $info-text-color;
 
     &:hover {
       background-color: $info-text-color;
@@ -20,12 +40,6 @@
       background-color: $info-text-color;
       border-color: $info-text-color;
       color: rgba(255, 255, 255, 0.3);
-    }
-
-    &:disabled {
-      border: 2px solid #e5e5e5;
-      background-color: $border-color;
-      border-color: $border-color;
     }
   }
 

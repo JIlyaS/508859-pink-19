@@ -110,7 +110,7 @@
 
   width: 24px;
   height: 23px;
-  background: url('../../img/icon-menu-cross.svg');
+  background-image: url('../../img/icon-menu-cross.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -121,11 +121,11 @@
   }
 
   &:hover {
-    background: url('../../img/icon-menu-cross-hover.svg');
+    background-image: url('../../img/icon-menu-cross-hover.svg');
   }
 
   &:active {
-    background: url('../../img/icon-menu-cross-hover.svg');
+    background-image: url('../../img/icon-menu-cross-hover.svg');
     opacity: 0.3;
   }
 }

@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="./js/plugins/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="header"> <!-- header--active -->
@@ -46,7 +50,7 @@
             <p class="text downloads__text">Взгляните на жизнь иначе!</p>
           </div>
           <div class="downloads__bottom-block">
-            <button class="btn btn--border downloads__btn-download">Скачать приложение</button>
+            <button class="btn btn--border btn--white downloads__btn-download">Скачать приложение</button>
             <ul class="downloads__list">
               <li class="downloads__item">
                 <img class="downloads__img-os" src="./img/logo-apple.svg" width="47px" height="56px" alt="Логотип Apple">
@@ -338,6 +342,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
